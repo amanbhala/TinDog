@@ -1,0 +1,246 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat-Bold";
+}
+
+p{
+    color: grey;
+}
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Headings */
+
+.big-heading{
+    font-family: "Montserrat-Bold";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+/* Navigation Bar */
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-light";
+}
+
+/* Download Buttons */
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/* Title section */
+
+/* We are trying to target specific elements by using css selectors. */
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+/* Title Image */
+.title-image{
+    width: 20%;
+    transform: rotate(25deg);
+    /* Will move out the element from the natural flow. */
+    position: absolute;
+    /* To move the phone photo a bit towards the right side so that it can come direclty under the Download option. */
+    right: 23%;
+}
+
+/* Features Section */
+#features{
+    /* Will keep the element in the natural flow. */
+    position: relative;
+    /* In this case we don't even need to have z-index value because the features come after title-image section. Refer the pdf */
+    /* z-index: 1; */
+}
+
+.feature-box{
+    padding: 5%;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+}
+
+.icon{
+    color: #EF8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+/* Testimonials Section */
+#testimonials{
+    background-color: #EF8172;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Press Section */
+#press{
+    background-color: #EF8172;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing{
+    padding: 100px;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+/* CTA section */
+/* #cta{
+    background-color: #ff4c68;
+    color: #fff;
+} */
+
+/* Footer Section */
+
+.social-icon{
+    margin: 20px 10px;
+}
+
+@media (max-width: 1000px) {
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
+}
+/* <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">Tindog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Download</a>
+            </li>
+        </ul>
+    </div>
+</nav> */
+/* <div class="row">
+    <div class="col" style="background-color:red; border: 1px solid;">
+        col
+    </div>
+    <div class="col" style="background-color:red; border: 1px solid;">
+        col
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6" style="background-color:green; border: 1px solid;">
+        col-6
+    </div>
+    <div class="col-3" style="background-color:green; border: 1px solid;">
+        col-3
+    </div>
+    <div class="col-2" style="background-color:green; border: 1px solid;">
+        col-2
+    </div>
+    <div class="col-1" style="background-color:green; border: 1px solid;">
+        col-1
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:green; border: 1px solid;">
+        col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:green; border: 1px solid;">
+        col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:green; border: 1px solid;">
+        col-lg-3 col-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:green; border: 1px solid;">
+        col-lg-3 col-md-4 col-sm-6
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:green; border: 1px solid;">
+        col-lg-2 col-md-3 col-sm-12
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:green; border: 1px solid;">
+        col-lg-2 col-md-3 col-sm-12
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:green; border: 1px solid;">
+        col-lg-2 col-md-3 col-sm-12
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12" style="background-color:green; border: 1px solid;">
+        col-lg-2 col-md-3 col-sm-12
+    </div>
+</div> */
